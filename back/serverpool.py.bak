@@ -1,0 +1,94 @@
+#!/usr/bin/python
+#-*- coding:utf-8 -*-
+
+
+import gtk
+
+class ServerPool(gtk.VBox):
+	def __init__(self):
+		gtk.VBox.__init__(self)
+
+		toolbar=gtk.Toolbar()
+		toolbar.set_style(gtk.TOOLBAR_ICONS)
+	
+		addtb=gtk.ToolButton(gtk.STOCK_ADD)
+		addtb.set_tooltip_text('添加')
+		deltb=gtk.ToolButton(gtk.STOCK_REMOVE)
+		deltb.set_tooltip_text('删除')
+		cleartb=gtk.ToolButton(gtk.STOCK_CLEAR)
+		cleartb.set_tooltip_text('清空列表')
+	       
+		toolbar.insert(addtb,0)
+		toolbar.insert(deltb,1)
+		toolbar.insert(cleartb,2)
+	
+		addtb.connect("clicked",self.add_server)
+		#deltb.connect("clicked",self.delete)
+		#cleartb.connect("clicked",self.clear)
+	
+		self.pack_start(toolbar,False,False,0)
+
+		sw=gtk.ScrolledWindow()
+		sw=gtk.ScrolledWindow()
+		sw.set_shadow_type(gtk.SHADOW_ETCHED_IN)
+		sw.set_policy(gtk.POLICY_AUTOMATIC,gtk.POLICY_AUTOMATIC)
+		self.add(sw)
+
+		self.liststore=gtk.ListStore(str,str,str,str,str)
+		treeview=gtk.TreeView(self.liststore)
+		sw.add(treeview)
+
+		rendererText=gtk.CellRendererText()
+		rendererText.connect('edited',self.edited,0)
+		rendererText.set_property('editable',True)
+		column=gtk.TreeViewColumn("服务器IP",rendererText,text=1)
+		column.set_resizable(True)
+		column.set_sizing(gtk.TREE_VIEW_COLUMN_FIXED)
+		column.set_fixed_width(210)
+		#column.set_min_width(100)
+		treeview.append_column(column)
+		
+		rendererText=gtk.CellRendererText()
+		rendererText.set_property('editable',True)
+		rendererText.connect('edited',self.edited,1)
+		column=gtk.TreeViewColumn("端口",rendererText,text=1)
+		column.set_resizable(True)
+		column.set_sizing(gtk.TREE_VIEW_COLUMN_FIXED)
+		column.set_fixed_width(106)
+		#column.set_min_width(100)
+		treeview.append_column(column)
+
+		rendererText=gtk.CellRendererText()
+		rendererText.set_property('editable',True)
+		rendererText.connect('edited',self.edited,2)
+		column=gtk.TreeViewColumn("用户名",rendererText,text=1)
+		column.set_resizable(True)
+		column.set_sizing(gtk.TREE_VIEW_COLUMN_FIXED)
+		column.set_fixed_width(140)
+		#column.set_min_width(100)
+		treeview.append_column(column)
+
+		rendererText=gtk.CellRendererText()
+		rendererText.set_property('editable',True)
+		rendererText.connect('edited',self.edited,3)
+		column=gtk.TreeViewColumn("密码",rendererText,text=1)
+		column.set_resizable(True)
+		column.set_sizing(gtk.TREE_VIEW_COLUMN_FIXED)
+		column.set_fixed_width(170)
+		#column.set_min_width(100)
+		treeview.append_column(column)
+
+		rendererText=gtk.CellRendererText()
+		rendererText.set_property('editable',True)
+		rendererText.connect('edited',self.edited,4)
+		column=gtk.TreeViewColumn("密码确认",rendererText,text=1)
+		column.set_resizable(True)
+		column.set_sizing(gtk.TREE_VIEW_COLUMN_FIXED)
+		column.set_fixed_width(170)
+		#column.set_min_width(100)
+		treeview.append_column(column)
+
+	def add_server(self,widget):
+		self.liststore.append(['----','----','----','----','----'])
+	def edited(self,cell,path,text,column):
+		self.liststore[path][column]=text

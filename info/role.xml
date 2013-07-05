@@ -1,0 +1,45 @@
+<root>
+<role>
+	<name>接入服务器</name>
+	<index>0</index>
+	<package>
+		<name>nginx</name>
+		<name>memcached</name>
+		<name>heartbeat</name>
+		<name>solomen</name>
+		<name>bluebird</name>
+	</package>
+</role>
+
+<role>
+	<name>中间件服务器</name>
+	<index>1</index>
+	<package>
+		<name>mkey3g</name>
+	</package>
+</role>
+
+<role>
+	<name>管理平台</name>
+	<index>2</index>
+	<package>
+		<name>mkey3g</name>
+	</package>
+</role>
+
+<role>
+	<name>孵化平台</name>
+	<index>3</index>
+	<package>
+		<name>mkey3g</name>
+	</package>
+</role>
+
+<role>
+	<name>数据库服务器</name>
+	<index>4</index>
+	<package>
+		<name>mysql</name>
+	</package>
+</role>
+</root>

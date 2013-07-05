@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<interface>
+  <requires lib="gtk+" version="2.16"/>
+  <!-- interface-naming-policy project-wide -->
+  <object class="GtkWindow" id="mainwindow">
+    <property name="window_position">center</property>
+    <property name="default_width">450</property>
+    <property name="default_height">175</property>
+    <property name="type_hint">dropdown-menu</property>
+    <child>
+      <object class="GtkVBox" id="vbox1">
+        <property name="visible">True</property>
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkLabel" id="title">
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">&#x6DFB;&#x52A0;&#x670D;&#x52A1;&#x5668;</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkHSeparator" id="hseparator1">
+            <property name="visible">True</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFixed" id="fixed">
+            <property name="visible">True</property>
+            <child>
+              <object class="GtkEntry" id="port">
+                <property name="width_request">100</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="invisible_char">&#x25CF;</property>
+              </object>
+              <packing>
+                <property name="x">340</property>
+                <property name="y">25</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="label1">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">&#x4E3B;&#x673A;IP                 </property>
+              </object>
+              <packing>
+                <property name="x">10</property>
+                <property name="y">5</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="label2">
+                <property name="visible">True</property>
+                <property name="xalign">0</property>
+                <property name="label" translatable="yes">&#x7AEF;&#x53E3;</property>
+              </object>
+              <packing>
+                <property name="x">340</property>
+                <property name="y">5</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="username">
+                <property name="width_request">120</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="invisible_char">&#x25CF;</property>
+              </object>
+              <packing>
+                <property name="x">10</property>
+                <property name="y">80</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="password">
+                <property name="width_request">100</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="invisible_char">&#x25CF;</property>
+              </object>
+              <packing>
+                <property name="x">340</property>
+                <property name="y">80</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="label3">
+                <property name="visible">True</property>
+                <property name="xalign">0</property>
+                <property name="label" translatable="yes">&#x7528;&#x6237;&#x540D;</property>
+              </object>
+              <packing>
+                <property name="x">10</property>
+                <property name="y">60</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="label4">
+                <property name="visible">True</property>
+                <property name="xalign">0</property>
+                <property name="label" translatable="yes">&#x5BC6;&#x7801;</property>
+              </object>
+              <packing>
+                <property name="x">340</property>
+                <property name="y">60</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkHSeparator" id="hseparator2">
+                <property name="width_request">446</property>
+                <property name="height_request">22</property>
+                <property name="visible">True</property>
+              </object>
+              <packing>
+                <property name="y">124</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="quitb">
+                <property name="label" translatable="yes">&#x53D6;&#x6D88;</property>
+                <property name="width_request">100</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+              </object>
+              <packing>
+                <property name="x">10</property>
+                <property name="y">145</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="next">
+                <property name="label" translatable="yes">&#x4E0B;&#x4E00;&#x6B65;</property>
+                <property name="width_request">100</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+              </object>
+              <packing>
+                <property name="x">340</property>
+                <property name="y">145</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="hostname">
+                <property name="width_request">180</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="invisible_char">&#x25CF;</property>
+              </object>
+              <packing>
+                <property name="x">10</property>
+                <property name="y">25</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="position">2</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

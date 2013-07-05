@@ -1,0 +1,748 @@
+<?xml version="1.0"?>
+<interface>
+  <requires lib="gtk+" version="2.16"/>
+  <!-- interface-naming-policy project-wide -->
+  <object class="GtkWindow" id="window1">
+    <child>
+      <object class="GtkNotebook" id="notebook1">
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <child>
+          <object class="GtkNotebook" id="notebook2">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="homogeneous">True</property>
+            <child>
+              <object class="GtkFixed" id="fixed2">
+                <property name="visible">True</property>
+                <child>
+                  <object class="GtkFrame" id="frame1">
+                    <property name="width_request">626</property>
+                    <property name="height_request">100</property>
+                    <property name="visible">True</property>
+                    <property name="label_xalign">0</property>
+                    <child>
+                      <object class="GtkAlignment" id="alignment1">
+                        <property name="visible">True</property>
+                        <property name="left_padding">12</property>
+                        <child>
+                          <object class="GtkFixed" id="fixed3">
+                            <property name="visible">True</property>
+                            <child>
+                              <object class="GtkLabel" id="label11">
+                                <property name="width_request">100</property>
+                                <property name="height_request">22</property>
+                                <property name="visible">True</property>
+                                <property name="xalign">0</property>
+                                <property name="label" translatable="yes">&#x4E3B;&#x673A;</property>
+                              </object>
+                              <packing>
+                                <property name="x">50</property>
+                                <property name="y">20</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkLabel" id="label12">
+                                <property name="width_request">100</property>
+                                <property name="height_request">22</property>
+                                <property name="visible">True</property>
+                                <property name="xalign">0</property>
+                                <property name="label" translatable="yes">&#x5907;&#x673A;</property>
+                              </object>
+                              <packing>
+                                <property name="x">250</property>
+                                <property name="y">20</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkLabel" id="label13">
+                                <property name="width_request">100</property>
+                                <property name="height_request">22</property>
+                                <property name="visible">True</property>
+                                <property name="xalign">0</property>
+                                <property name="label" translatable="yes">&#x865A;&#x62DF;IP</property>
+                              </object>
+                              <packing>
+                                <property name="x">450</property>
+                                <property name="y">20</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkComboBoxEntry" id="comboboxentry1">
+                                <property name="width_request">150</property>
+                                <property name="height_request">25</property>
+                                <property name="visible">True</property>
+                              </object>
+                              <packing>
+                                <property name="x">50</property>
+                                <property name="y">40</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkComboBoxEntry" id="comboboxentry2">
+                                <property name="width_request">150</property>
+                                <property name="height_request">25</property>
+                                <property name="visible">True</property>
+                              </object>
+                              <packing>
+                                <property name="x">250</property>
+                                <property name="y">40</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkEntry" id="entry1">
+                                <property name="width_request">150</property>
+                                <property name="height_request">25</property>
+                                <property name="visible">True</property>
+                                <property name="can_focus">True</property>
+                                <property name="invisible_char">&#x25CF;</property>
+                              </object>
+                              <packing>
+                                <property name="x">450</property>
+                                <property name="y">41</property>
+                              </packing>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child type="label">
+                      <object class="GtkLabel" id="label10">
+                        <property name="visible">True</property>
+                        <property name="label" translatable="yes">&lt;b&gt;&#x57FA;&#x672C;&#x914D;&#x7F6E;&lt;/b&gt;</property>
+                        <property name="use_markup">True</property>
+                      </object>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="x">7</property>
+                    <property name="y">14</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkFrame" id="frame2">
+                    <property name="width_request">620</property>
+                    <property name="height_request">124</property>
+                    <property name="visible">True</property>
+                    <property name="label_xalign">0</property>
+                    <child>
+                      <object class="GtkAlignment" id="alignment2">
+                        <property name="visible">True</property>
+                        <property name="left_padding">12</property>
+                        <child>
+                          <object class="GtkFixed" id="fixed4">
+                            <property name="visible">True</property>
+                            <child>
+                              <object class="GtkRadioButton" id="radiobutton1">
+                                <property name="label" translatable="yes">&#x5F00;&#x542F;</property>
+                                <property name="width_request">118</property>
+                                <property name="height_request">80</property>
+                                <property name="visible">True</property>
+                                <property name="can_focus">True</property>
+                                <property name="receives_default">False</property>
+                                <property name="active">True</property>
+                                <property name="draw_indicator">True</property>
+                              </object>
+                              <packing>
+                                <property name="x">51</property>
+                                <property name="y">8</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkRadioButton" id="radiobutton4">
+                                <property name="label" translatable="yes">&#x5173;&#x95ED;</property>
+                                <property name="width_request">100</property>
+                                <property name="height_request">80</property>
+                                <property name="visible">True</property>
+                                <property name="can_focus">True</property>
+                                <property name="receives_default">False</property>
+                                <property name="active">True</property>
+                                <property name="draw_indicator">True</property>
+                                <property name="group">radiobutton1</property>
+                              </object>
+                              <packing>
+                                <property name="x">330</property>
+                                <property name="y">8</property>
+                              </packing>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child type="label">
+                      <object class="GtkLabel" id="label14">
+                        <property name="visible">True</property>
+                        <property name="label" translatable="yes">&lt;b&gt;&#x8FDB;&#x7A0B;&#x76D1;&#x63A7;&lt;/b&gt;</property>
+                        <property name="use_markup">True</property>
+                      </object>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="x">10</property>
+                    <property name="y">127</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkFrame" id="frame3">
+                    <property name="width_request">619</property>
+                    <property name="height_request">130</property>
+                    <property name="visible">True</property>
+                    <property name="label_xalign">0</property>
+                    <child>
+                      <object class="GtkAlignment" id="alignment3">
+                        <property name="visible">True</property>
+                        <property name="left_padding">12</property>
+                        <child>
+                          <object class="GtkFixed" id="fixed5">
+                            <property name="visible">True</property>
+                            <child>
+                              <object class="GtkRadioButton" id="radiobutton2">
+                                <property name="label" translatable="yes">&#x5F00;&#x542F;</property>
+                                <property name="width_request">100</property>
+                                <property name="height_request">80</property>
+                                <property name="visible">True</property>
+                                <property name="can_focus">True</property>
+                                <property name="receives_default">False</property>
+                                <property name="active">True</property>
+                                <property name="draw_indicator">True</property>
+                              </object>
+                              <packing>
+                                <property name="x">51</property>
+                                <property name="y">7</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkRadioButton" id="radiobutton3">
+                                <property name="label" translatable="yes">&#x5173;&#x95ED;</property>
+                                <property name="width_request">100</property>
+                                <property name="height_request">80</property>
+                                <property name="visible">True</property>
+                                <property name="can_focus">True</property>
+                                <property name="receives_default">False</property>
+                                <property name="active">True</property>
+                                <property name="draw_indicator">True</property>
+                                <property name="group">radiobutton2</property>
+                              </object>
+                              <packing>
+                                <property name="x">327</property>
+                                <property name="y">6</property>
+                              </packing>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child type="label">
+                      <object class="GtkLabel" id="label15">
+                        <property name="visible">True</property>
+                        <property name="label" translatable="yes">&lt;b&gt;&#x6570;&#x636E;&#x540C;&#x6B65;&lt;/b&gt;</property>
+                        <property name="use_markup">True</property>
+                      </object>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="x">12</property>
+                    <property name="y">258</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkFrame" id="frame4">
+                    <property name="width_request">616</property>
+                    <property name="height_request">124</property>
+                    <property name="visible">True</property>
+                    <property name="label_xalign">0</property>
+                    <child>
+                      <object class="GtkAlignment" id="alignment4">
+                        <property name="visible">True</property>
+                        <property name="left_padding">12</property>
+                        <child>
+                          <object class="GtkFixed" id="fixed6">
+                            <property name="visible">True</property>
+                            <child>
+                              <object class="GtkRadioButton" id="radiobutton5">
+                                <property name="label" translatable="yes">&#x5F00;&#x542F;</property>
+                                <property name="width_request">100</property>
+                                <property name="height_request">80</property>
+                                <property name="visible">True</property>
+                                <property name="can_focus">True</property>
+                                <property name="receives_default">False</property>
+                                <property name="active">True</property>
+                                <property name="draw_indicator">True</property>
+                              </object>
+                              <packing>
+                                <property name="x">52</property>
+                                <property name="y">7</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkRadioButton" id="radiobutton6">
+                                <property name="label" translatable="yes">&#x5173;&#x95ED;</property>
+                                <property name="width_request">100</property>
+                                <property name="height_request">80</property>
+                                <property name="visible">True</property>
+                                <property name="can_focus">True</property>
+                                <property name="receives_default">False</property>
+                                <property name="active">True</property>
+                                <property name="draw_indicator">True</property>
+                                <property name="group">radiobutton5</property>
+                              </object>
+                              <packing>
+                                <property name="x">333</property>
+                              </packing>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child type="label">
+                      <object class="GtkLabel" id="label16">
+                        <property name="visible">True</property>
+                        <property name="label" translatable="yes">&lt;b&gt;&#x90AE;&#x4EF6;&#x544A;&#x8B66;&lt;/b&gt;</property>
+                        <property name="use_markup">True</property>
+                      </object>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="x">14</property>
+                    <property name="y">400</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="button2">
+                    <property name="label" translatable="yes">&#x4FDD;&#x5B58;</property>
+                    <property name="width_request">100</property>
+                    <property name="height_request">25</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                  </object>
+                  <packing>
+                    <property name="x">531</property>
+                    <property name="y">531</property>
+                  </packing>
+                </child>
+              </object>
+            </child>
+            <child type="tab">
+              <object class="GtkLabel" id="label4">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">HA&#x914D;&#x7F6E;</property>
+              </object>
+              <packing>
+                <property name="tab_fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkNotebook" id="notebook4">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <child>
+                  <object class="GtkFixed" id="fixed10">
+                    <property name="visible">True</property>
+                  </object>
+                </child>
+                <child type="tab">
+                  <object class="GtkLabel" id="label17">
+                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">&#x865A;&#x62DF;&#x4E3B;&#x673A;</property>
+                  </object>
+                  <packing>
+                    <property name="tab_fill">False</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkFixed" id="fixed12">
+                    <property name="visible">True</property>
+                  </object>
+                  <packing>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
+                <child type="tab">
+                  <object class="GtkLabel" id="label18">
+                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">&#x6B63;&#x5411;&#x4EE3;&#x7406;</property>
+                  </object>
+                  <packing>
+                    <property name="position">1</property>
+                    <property name="tab_fill">False</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkNotebook" id="notebook5">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <child>
+                      <object class="GtkFixed" id="fixed11">
+                        <property name="visible">True</property>
+                      </object>
+                    </child>
+                    <child type="tab">
+                      <object class="GtkLabel" id="label24">
+                        <property name="visible">True</property>
+                        <property name="label" translatable="yes">web&#x8BBF;&#x95EE;</property>
+                      </object>
+                      <packing>
+                        <property name="tab_fill">False</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkFixed" id="fixed16">
+                        <property name="visible">True</property>
+                      </object>
+                      <packing>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                    <child type="tab">
+                      <object class="GtkLabel" id="label25">
+                        <property name="visible">True</property>
+                        <property name="label" translatable="yes">&#x5BA2;&#x6237;&#x7AEF;&#x8BBF;&#x95EE;</property>
+                      </object>
+                      <packing>
+                        <property name="position">1</property>
+                        <property name="tab_fill">False</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkFixed" id="fixed17">
+                        <property name="visible">True</property>
+                      </object>
+                      <packing>
+                        <property name="position">2</property>
+                      </packing>
+                    </child>
+                    <child type="tab">
+                      <object class="GtkLabel" id="label26">
+                        <property name="visible">True</property>
+                        <property name="label" translatable="yes">wap&#x8BBF;&#x95EE;</property>
+                      </object>
+                      <packing>
+                        <property name="position">2</property>
+                        <property name="tab_fill">False</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="position">2</property>
+                  </packing>
+                </child>
+                <child type="tab">
+                  <object class="GtkLabel" id="label19">
+                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">&#x53CD;&#x5411;&#x4EE3;&#x7406;</property>
+                  </object>
+                  <packing>
+                    <property name="position">2</property>
+                    <property name="tab_fill">False</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child type="tab">
+              <object class="GtkLabel" id="label5">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">nginx&#x914D;&#x7F6E;</property>
+              </object>
+              <packing>
+                <property name="position">1</property>
+                <property name="tab_fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkFixed" id="fixed1">
+                <property name="visible">True</property>
+                <child>
+                  <object class="GtkButton" id="button1">
+                    <property name="label" translatable="yes">&#x4FDD;&#x5B58;</property>
+                    <property name="width_request">100</property>
+                    <property name="height_request">25</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                  </object>
+                  <packing>
+                    <property name="x">538</property>
+                    <property name="y">537</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child type="tab">
+              <object class="GtkLabel" id="label6">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">memcached&#x914D;&#x7F6E;</property>
+              </object>
+              <packing>
+                <property name="position">2</property>
+                <property name="tab_fill">False</property>
+              </packing>
+            </child>
+          </object>
+        </child>
+        <child type="tab">
+          <object class="GtkLabel" id="label1">
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">&#x63A5;&#x5165;&#x670D;&#x52A1;&#x5668;&#x914D;&#x7F6E;</property>
+          </object>
+          <packing>
+            <property name="tab_fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFixed" id="fixed8">
+            <property name="visible">True</property>
+            <child>
+              <object class="GtkFrame" id="frame6">
+                <property name="width_request">625</property>
+                <property name="height_request">200</property>
+                <property name="visible">True</property>
+                <property name="label_xalign">0</property>
+                <child>
+                  <object class="GtkAlignment" id="alignment6">
+                    <property name="visible">True</property>
+                    <property name="left_padding">12</property>
+                    <child>
+                      <object class="GtkFixed" id="fixed9">
+                        <property name="visible">True</property>
+                        <child>
+                          <object class="GtkLabel" id="label21">
+                            <property name="width_request">100</property>
+                            <property name="height_request">30</property>
+                            <property name="visible">True</property>
+                            <property name="xalign">0.05000000074505806</property>
+                            <property name="yalign">0.05000000074505806</property>
+                            <property name="label" translatable="yes">JDBC&#x5730;&#x5740;</property>
+                          </object>
+                          <packing>
+                            <property name="x">96</property>
+                            <property name="y">36</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkEntry" id="entry3">
+                            <property name="width_request">288</property>
+                            <property name="height_request">27</property>
+                            <property name="visible">True</property>
+                            <property name="can_focus">True</property>
+                            <property name="invisible_char">&#x25CF;</property>
+                          </object>
+                          <packing>
+                            <property name="x">98</property>
+                            <property name="y">68</property>
+                          </packing>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child type="label">
+                  <object class="GtkLabel" id="label20">
+                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">&lt;b&gt;JDBC&#x914D;&#x7F6E;&lt;/b&gt;</property>
+                    <property name="use_markup">True</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="x">11</property>
+                <property name="y">15</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkFrame" id="frame5">
+                <property name="width_request">621</property>
+                <property name="height_request">206</property>
+                <property name="visible">True</property>
+                <property name="label_xalign">0</property>
+                <child>
+                  <object class="GtkAlignment" id="alignment5">
+                    <property name="visible">True</property>
+                    <property name="left_padding">12</property>
+                    <child>
+                      <object class="GtkFixed" id="fixed7">
+                        <property name="visible">True</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child type="label">
+                  <object class="GtkLabel" id="label22">
+                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">&lt;b&gt;JvmRoute&lt;/b&gt;</property>
+                    <property name="use_markup">True</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="x">12</property>
+                <property name="y">234</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child type="tab">
+          <object class="GtkLabel" id="label2">
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">&#x4E2D;&#x95F4;&#x4EF6;&#x670D;&#x52A1;&#x5668;&#x914D;&#x7F6E;</property>
+          </object>
+          <packing>
+            <property name="position">1</property>
+            <property name="tab_fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkNotebook" id="notebook3">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="homogeneous">True</property>
+            <child>
+              <object class="GtkFixed" id="fixed13">
+                <property name="visible">True</property>
+              </object>
+            </child>
+            <child type="tab">
+              <object class="GtkLabel" id="label7">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">HA&#x914D;&#x7F6E;</property>
+              </object>
+              <packing>
+                <property name="tab_fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkFixed" id="fixed14">
+                <property name="visible">True</property>
+                <child>
+                  <object class="GtkFrame" id="frame7">
+                    <property name="width_request">598</property>
+                    <property name="height_request">83</property>
+                    <property name="visible">True</property>
+                    <property name="label_xalign">0</property>
+                    <child>
+                      <object class="GtkAlignment" id="alignment7">
+                        <property name="visible">True</property>
+                        <property name="left_padding">12</property>
+                        <child>
+                          <object class="GtkFixed" id="fixed15">
+                            <property name="visible">True</property>
+                            <child>
+                              <object class="GtkRadioButton" id="radiobutton7">
+                                <property name="label" translatable="yes">&#x5F00;&#x542F;</property>
+                                <property name="width_request">100</property>
+                                <property name="height_request">40</property>
+                                <property name="visible">True</property>
+                                <property name="can_focus">True</property>
+                                <property name="receives_default">False</property>
+                                <property name="active">True</property>
+                                <property name="draw_indicator">True</property>
+                              </object>
+                              <packing>
+                                <property name="x">94</property>
+                                <property name="y">12</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkRadioButton" id="radiobutton8">
+                                <property name="label" translatable="yes">&#x5173;&#x95ED;</property>
+                                <property name="width_request">100</property>
+                                <property name="height_request">47</property>
+                                <property name="visible">True</property>
+                                <property name="can_focus">True</property>
+                                <property name="receives_default">False</property>
+                                <property name="active">True</property>
+                                <property name="draw_indicator">True</property>
+                                <property name="group">radiobutton7</property>
+                              </object>
+                              <packing>
+                                <property name="x">365</property>
+                                <property name="y">7</property>
+                              </packing>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child type="label">
+                      <object class="GtkLabel" id="label23">
+                        <property name="visible">True</property>
+                        <property name="label" translatable="yes">&lt;b&gt;&lt;/b&gt;</property>
+                        <property name="use_markup">True</property>
+                      </object>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="x">18</property>
+                    <property name="y">20</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="button3">
+                    <property name="label" translatable="yes">&#x4FDD;&#x5B58;</property>
+                    <property name="width_request">100</property>
+                    <property name="height_request">25</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                  </object>
+                  <packing>
+                    <property name="x">535</property>
+                    <property name="y">562</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child type="tab">
+              <object class="GtkLabel" id="label8">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">&#x6570;&#x636E;&#x540C;&#x6B65;&#x914D;&#x7F6E;</property>
+              </object>
+              <packing>
+                <property name="position">1</property>
+                <property name="tab_fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child type="tab">
+              <object class="GtkLabel" id="label9">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">&#x914D;&#x7F6E;&#x6D4B;&#x8BD5;</property>
+              </object>
+              <packing>
+                <property name="position">2</property>
+                <property name="tab_fill">False</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="position">2</property>
+          </packing>
+        </child>
+        <child type="tab">
+          <object class="GtkLabel" id="label3">
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">&#x6570;&#x636E;&#x5E93;&#x670D;&#x52A1;&#x5668;&#x914D;&#x7F6E;</property>
+          </object>
+          <packing>
+            <property name="position">2</property>
+            <property name="tab_fill">False</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

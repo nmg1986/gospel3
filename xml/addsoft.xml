@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<interface>
+  <requires lib="gtk+" version="2.16"/>
+  <!-- interface-naming-policy project-wide -->
+  <object class="GtkFileChooserDialog" id="filechooserdialog">
+    <property name="width_request">570</property>
+    <property name="height_request">500</property>
+    <property name="border_width">5</property>
+    <property name="type_hint">normal</property>
+    <property name="has_separator">False</property>
+    <child internal-child="vbox">
+      <object class="GtkVBox" id="dialog-vbox1">
+        <property name="visible">True</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">2</property>
+        <child>
+          <object class="GtkFixed" id="fixed1">
+            <property name="visible">True</property>
+            <child>
+              <object class="GtkLabel" id="label1">
+                <property name="width_request">100</property>
+                <property name="height_request">29</property>
+                <property name="visible">True</property>
+                <property name="xalign">0</property>
+                <property name="label" translatable="yes">&#x529F;&#x80FD;&#x63CF;&#x8FF0;</property>
+              </object>
+              <packing>
+                <property name="x">9</property>
+                <property name="y">13</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkTextView" id="textview">
+                <property name="width_request">538</property>
+                <property name="height_request">80</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+              </object>
+              <packing>
+                <property name="x">10</property>
+                <property name="y">38</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+        <child internal-child="action_area">
+          <object class="GtkHButtonBox" id="dialog-action_area1">
+            <property name="visible">True</property>
+            <property name="layout_style">end</property>
+            <child>
+              <object class="GtkButton" id="quit">
+                <property name="label" translatable="yes">&#x9000;&#x51FA;</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="add">
+                <property name="label" translatable="yes">&#x6DFB;&#x52A0;</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="pack_type">end</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+    <action-widgets>
+      <action-widget response="0">quit</action-widget>
+      <action-widget response="0">add</action-widget>
+    </action-widgets>
+  </object>
+</interface>

@@ -1,0 +1,105 @@
+#!/usr/bin/python
+# -*- coding:utf-8 -*- 
+
+
+import gtk
+
+
+
+class ConfigManager(gtk.HPaned):
+	def __init__(self):
+		gtk.HPaned.__init__(self)
+		self.set_position(0)	
+		sw=gtk.ScrolledWindow()
+		sw.set_policy(gtk.POLICY_AUTOMATIC,gtk.POLICY_AUTOMATIC)
+		
+		treestore=gtk.TreeStore(str)
+		treeview=gtk.TreeView(treestore)
+		sw.add(treeview)
+		#self.add1(sw)
+
+		iter=treestore.append(None,['接入服务器'])
+		treestore.append(iter,['192.168.1.10'])
+		treestore.append(iter,['192.168.1.11'])
+
+		iter=treestore.append(None,['中间件服务器'])
+		treestore.append(iter,['192.168.1.12'])
+		treestore.append(iter,['192.168.1.13'])
+		treestore.append(iter,['192.168.1.14'])
+		treestore.append(iter,['192.168.1.15'])
+
+		iter=treestore.append(None,['管理平台'])
+		treestore.append(iter,['192.168.1.16'])
+		treestore.append(iter,['192.168.1.17'])
+
+		iter=treestore.append(None,['孵化平台'])
+		treestore.append(iter,['192.168.1.18'])
+		treestore.append(iter,['192.168.1.19'])
+
+		iter=treestore.append(None,['数据库服务器'])
+		treestore.append(iter,['192.168.1.20'])
+		treestore.append(iter,['192.168.1.21'])
+
+		cell=gtk.CellRendererText()
+		column=gtk.TreeViewColumn('服务器列表',cell,text=0)
+		treeview.append_column(column)
+
+		vbox=gtk.VBox()
+		self.add2(vbox)
+		
+		notebook=gtk.Notebook()
+		vbox.add(notebook)
+
+		vbox=gtk.VBox()
+		label=gtk.Label('HA双机配置')
+		notebook.append_page(vbox,label)
+		frame=gtk.Frame('基本配置')
+		vbox.add(frame)
+		frame=gtk.Frame('进程监控')
+		vbox.add(frame)
+		frame=gtk.Frame('数据同步')
+		vbox.add(frame)
+		frame=gtk.Frame('邮件配置')
+		vbox.add(frame)
+		fixed=gtk.Fixed()
+		fixed.set_size_request(-1,30)
+		vbox.pack_end(fixed,False,False,0)
+		button=gtk.Button('清除配置')
+		button.set_size_request(100,30)
+		fixed.put(button,0,0)
+
+		button=gtk.Button('保存配置')
+		button.set_size_request(100,30)
+		fixed.put(button,745,0)
+
+		vbox=gtk.VBox()
+		label=gtk.Label('nginx集群配置')
+		notebook.append_page(vbox,label)
+		
+		nb=gtk.Notebook()
+		vbox.add(nb)
+		
+		vbox=gtk.VBox()
+		label=gtk.Label('虚拟主机配置')
+		nb.append_page(vbox,label)
+
+		vbox=gtk.VBox()
+		label=gtk.Label('正向代理配置')
+		nb.append_page(vbox,label)
+	
+		vbox=gtk.VBox()
+		label=gtk.Label('反向代理配置')
+		nb.append_page(vbox,label)
+
+		vbox=gtk.VBox()
+		label=gtk.Label('缓存配置')
+		nb.append_page(vbox,label)
+
+		vbox=gtk.VBox()
+		label=gtk.Label('MFS配置   ')
+		notebook.append_page(vbox,label)
+
+		vbox=gtk.VBox()
+		label=gtk.Label('mysql双向同步配置')
+		notebook.append_page(vbox,label)
+
