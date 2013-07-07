@@ -1,0 +1,41 @@
+[bluebird]
+version = '1.0.10'
+size	= '60K'
+description = '双机热备数据同步软件'
+package	= 'bluebird-1.0.10.tar.gz'
+
+[solomon]
+version = '1.0.16'
+size	= '80K'
+description = '双机热备进程监控软件'
+package	= 'solomon-1.0.16.tar.gz'
+
+[heartbeat]
+version	= '1.0.12'
+size	= '20M'
+description = '双机热备软件'
+package	= 'heartbeat-1.0.12.tar.gz'
+
+[memcached]
+version	= '1.0.17'
+size	= '784K'
+description = 'session共享软件'
+package = 'memcached-1.0.17.tar.gz'
+
+[nginx]
+version	= '1.0.18'
+size	= '6.4M'
+description = '七层负载均衡反向代理软件'
+package = 'nginx-1.0.18.tar.gz'
+
+[haproxy]
+version = '0.0.2'
+size	= '832K'
+description = '四层负载均衡反向代理软件'
+package = 'haproxy-0.0.2.tar.gz'
+
+[mfs]
+version	= '1.0.7'
+size = '18M'
+description = '分布式存储软件'
+package = 'mfs-1.0.7.tar.gz'
